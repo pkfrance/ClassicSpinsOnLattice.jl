@@ -1,0 +1,13 @@
+name = "ClassicSpinsOnLattice"
+uuid = "23fb460c-8ef5-40e2-b469-d4a9f98dc3f1"
+authors = ["Pavel Kalugin <pkfrance@yahoo.com> and contributors"]
+version = "1.0.0-DEV"
+
+[compat]
+julia = "1.6.7"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
