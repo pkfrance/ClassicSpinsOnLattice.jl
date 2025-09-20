@@ -1,1 +1,37 @@
+# Julia package typical ignores
+/.julia/
+/Manifest.toml
+*.jl.cov
+*.jl.*.cov
+*.jl.mem
+*.jl.*.mem
+*.jl.gcda
+*.jl.gcno
+*.jl.prof
+*.jl.*.prof
+*.jl.coverage
+*.jl.*.coverage
+*.jl.*
+*.so
+*.dylib
+*.dll
+*.exe
+*.out
+*.log
+*.tmp
+*.bak
+*.swp
+*.DS_Store
 
+# VSCode and editor files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Copilot-related ignores
+.github/copilot-instructions.md
+copilot.*
+*copilot*
+.Copilot/
+Copilot/
