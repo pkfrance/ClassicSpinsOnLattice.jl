@@ -1,8 +1,8 @@
 module ClassicSpinsOnLattice
 
-using StaticArrays: SVector, deleteat, insert, pushfirst
+using StaticArrays: SVector, SMatrix, deleteat, insert, pushfirst
 
-export Link, @Link, SpinProblem, add_link!, dir
+export Link, @Link, SpinProblem, add_link!, unit_vector, du_dp
 
 include("problem.jl")
 include("spin.jl")
