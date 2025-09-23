@@ -2,5 +2,5 @@ using ClassicSpinsOnLattice
 using Test
 
 @testset "ClassicSpinsOnLattice.jl" begin
-    # Write your tests here.
+    include("test_unit_vector.jl")
 end

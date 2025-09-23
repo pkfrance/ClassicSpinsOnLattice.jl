@@ -42,7 +42,7 @@ Computes the Jacobian matrix of the `unit_vector` function with respect to the i
 """
 function du_dp(p::SVector{D, Float64}) where D
     b=sin(p[1])*du_dp(deleteat(p, 1))
-    r=vcat(zeros(Float64, D-1), b)
+    r=vcat(zeros(Float64, D-1)', b)
     v=cos(p[1])*unit_vector(deleteat(p, 1))
     c=pushfirst(v, -sin(p[1]))
     hcat(c, r)
