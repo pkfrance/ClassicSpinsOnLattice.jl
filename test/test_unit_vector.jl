@@ -25,7 +25,6 @@ end
             for i in 1:size(J, 2)
                 @test isapprox(dot(v, J[:, i]), 0.0; atol=1e-14)
             end
-            # TODO: add a finite difference test
             for __ in 1:10
                 dp=1e-8*(rand(SVector{d, Float64}).-0.5)
                 dv1=unit_vector(p+dp)-v
